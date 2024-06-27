@@ -41,8 +41,6 @@ group :development, :test do
   gem 'rspec-rails', '~> 6.1', '>= 6.1.3'
   # It provides integration between factory_bot and rails 5.0 or newer
   gem 'factory_bot_rails', '~> 6.4', '>= 6.4.3'
-  # It is an integration testing tool for rack based web applications. It simulates how a user would interact with a website
-  gem 'capybara', '~> 3.40'
   # A library for generating fake data
   gem 'faker', '~> 3.4', '>= 3.4.1'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -56,3 +54,9 @@ group :development do
   # gem "spring"
 end
 
+group :test do
+  # It is an integration testing tool for rack based web applications. It simulates how a user would interact with a website
+  gem 'capybara', '~> 3.40'
+  # Simple One-Liner Tests for Rails
+  gem 'shoulda-matchers', '~> 6.2'
+end
