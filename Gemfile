@@ -47,10 +47,11 @@ group :development, :test do
   gem 'faker', '~> 3.4', '>= 3.4.1'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows]
-  gem 'rubocop', require: false
 end
 
 group :development do
+  # Annotates Rails/ActiveRecord Models, routes, fixtures, and others based on the database schema
+  gem 'annotate', '~> 3.2'
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
